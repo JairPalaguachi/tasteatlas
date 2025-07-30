@@ -17,7 +17,7 @@ export default function DishTable( { data } : { data: Dish[] } ) {
   let getRows = () => {
     if (rows.length) {
       return (
-        rows.slice(0,10).map((row) => (
+        rows.slice(0,100).map((row) => (
           <TableRow
             key={row.position}
             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
